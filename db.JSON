@@ -1,0 +1,18 @@
+{
+  "clouds": [
+    {
+      "id": 1,
+      "name": "Football",
+      "category": "game"
+    }
+  ],
+  "profile": {
+    "name": "Azad Akhtar",
+    "email": "azadakhtar@gmail.com",
+    "phoneNumber": "+918340272471"
+  },
+  "login": {
+    "email": "azadakhtar@gmail.com",
+    "password": "azad@12345"
+  }
+}

@@ -1,0 +1,23 @@
+.onlyCapitalized{ text-transform: capitalize !important;}
+.string-content {
+    padding: 6px;
+    height: 70px;
+    width: 360px;
+    overflow: scroll;
+  }
+  .white-space { white-space: break-spaces !important;}
+  .WQNxq { min-height: 160px !important;}
+
+  /* dashboard  */
+  .addWidgetButton {
+    border: 1px;
+    border-color: #b8b2b2 !important;
+    background-color: #b8b2b2 !important;
+    color: #8c8888 !important;
+    width: 150px;
+  }
+
+  .addFormHeader{
+    background: #150552 !important;
+    color: #fff !important;
+  }
