@@ -1,12 +1,4 @@
 .onlyCapitalized{ text-transform: capitalize !important;}
-.string-content {
-    padding: 6px;
-    height: 70px;
-    width: 360px;
-    overflow: scroll;
-  }
-  .white-space { white-space: break-spaces !important;}
-  .WQNxq { min-height: 160px !important;}
 
   /* dashboard  */
   .addWidgetButton {
@@ -17,7 +9,8 @@
     width: 150px;
   }
 
-  .addFormHeader{
+  .addForm.offcanvas-header{
     background: #150552 !important;
+    background-color: #150552 !important;
     color: #fff !important;
   }

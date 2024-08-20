@@ -36,7 +36,8 @@ const ProfileUpdate = lazy(() => import("../../views/admin/auth/Profile"))
 // admin components routes
 const DefaultPage = lazy(() => import("../../views/admin/dashboard/dashboard"))
 const DashboardPage = lazy(() => import("../../views/admin/dashboard/dashboard"))
-const HomePage = lazy(() => import("../../views/admin/dashboard/dashboard"))
+const HomePage = lazy(() => import("../../views/admin/home"))
+const TestPage = lazy(() => import("../../views/admin/dashboard/no-graph"))
 
 // ** Utils
 // import { getUserData, getHomeRouteForLoggedInUser } from '../../utility/Utils'
@@ -86,8 +87,12 @@ const Routes = [
     element: <ProfileUpdate />
   },
   {
-    path: "/admin/home",
+    path: "/home",
     element: <HomePage />
+  },
+  {
+    path: "/test",
+    element: <TestPage />
   },
   
 

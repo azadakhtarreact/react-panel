@@ -77,7 +77,7 @@ const ApexRadiarChart = () => {
         breakpoint: 576,
         options: {
           chart: {
-            height: 320
+            height: 400
           },
           plotOptions: {
             pie: {
@@ -85,13 +85,13 @@ const ApexRadiarChart = () => {
                 labels: {
                   show: true,
                   name: {
-                    fontSize: '1.5rem'
+                    fontSize: '1rem'
                   },
                   value: {
                     fontSize: '1rem'
                   },
                   total: {
-                    fontSize: '1.5rem'
+                    fontSize: '1rem'
                   }
                 }
               }
@@ -107,7 +107,7 @@ const ApexRadiarChart = () => {
 
   return (
     <>
-    <Chart options={options} series={series} type='donut' height={230} />
+    <Chart options={options} series={series} type='donut' height={350} />
     </>
   )
 }

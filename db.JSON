@@ -2,8 +2,23 @@
   "clouds": [
     {
       "id": 1,
-      "name": "Football",
-      "category": "game"
+      "name": "Cloud Accounts",
+      "category": "game",
+      "type": "account"
+    },
+    {
+      "id": 2,
+      "name": "Cloud Risk Management",
+      "category": "game",
+      "type": "risk"
+    },
+    {
+      "name": "Workload Alert",
+      "id": 3
+    },
+    {
+      "name": "Workload Alert",
+      "id": 4
     }
   ],
   "profile": {

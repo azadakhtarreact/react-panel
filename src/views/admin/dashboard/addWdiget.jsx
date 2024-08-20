@@ -13,7 +13,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 // Utility-Service
 import { getToken } from '../../../utility/AuthService'
 
-import { ChevronDown, Share, FileText, File, Grid, Plus } from 'react-feather'
+import { Plus } from 'react-feather'
 import {
     Button, Offcanvas, OffcanvasHeader, OffcanvasBody, Card, CardHeader, CardBody, CardTitle, CardText, CardLink, Row,
     Col,
@@ -54,7 +54,7 @@ const AddWidgetPage = () => {
     )
 
     // const handleCreateData = async (data, e) => {
-        
+
     //     setLoading(true)
     //     const input = {
     //         widgetOne: data?.widgetOne,
@@ -73,11 +73,18 @@ const AddWidgetPage = () => {
     const toggleCanvasScroll = () => {
         setCanvasScroll(true)
         setCanvasOpen(!canvasOpen)
+        reset()
     }
 
     const toggleCanvasBackdrop = () => {
         setCanvasBackdrop(false)
         setCanvasOpen(!canvasOpen)
+    }
+
+    const cancelledWidget = () => {
+        toggleCanvasScroll()
+        // setCanvasOpen(!canvasOpen)
+        reset()
     }
 
     const handleCreateData = async (data, e) => {
@@ -93,11 +100,11 @@ const AddWidgetPage = () => {
 
         if (result) {
             setLoading(false)
-            reset({ widgetOne: '', widgetTwo: ''})
+            reset({ widgetOne: '', widgetTwo: '' })
             toast.success('Widget added successfully')
             dispatch(setFreshList(true))
             toggleCanvasBackdrop()
-            
+
         } else {
             setLoading(false)
             // toast.success(result?.data?.errorMessage)
@@ -173,26 +180,28 @@ const AddWidgetPage = () => {
                                     </Col>
                                 </Row>
 
-                                <Row>
+                                <div className="" style={{ height: '100vh' }}>
+                                    <Row>
 
-                                    <Col xs={12} className='text-right pt-50'>
-                                    <Button
-                                            color='secondary'
-                                            className='me-1'
-                                            toggle={toggleCanvasScroll}
+                                        <Col xs={12} className='text-right pt-50 pos'>
+                                            <Button
+                                                color='secondary'
+                                                className='me-1'
+                                                onClick={()=> cancelledWidget()}
                                             // onClick={() => {
                                             //     setShow(!show)
                                             //     reset()
                                             // }}
-                                        >
-                                            Cancel
-                                        </Button>
-                                        <Button type='submit'  color='primary'>
-                                            {isLoading ? <Spinner color='light' size='sm' /> : 'Confirm'}
-                                        </Button>
-                                       
-                                    </Col>
-                                </Row>
+                                            >
+                                                Cancel
+                                            </Button>
+                                            <Button type='submit' color='primary'>
+                                                {isLoading ? <Spinner color='light' size='sm' /> : 'Confirm'}
+                                            </Button>
+
+                                        </Col>
+                                    </Row>
+                                </div>
                             </Form>
                         </>
                     </OffcanvasBody>
