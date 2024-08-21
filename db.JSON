@@ -1,24 +1,66 @@
 {
-  "clouds": [
+  "cspm": [
     {
       "id": 1,
       "name": "Cloud Accounts",
-      "category": "game",
+      "text": "Testing",
+      "category": "CSPM Executive Dashboard",
+      "is_active": true,
       "type": "account"
     },
     {
       "id": 2,
       "name": "Cloud Risk Management",
-      "category": "game",
+      "text": "No Graph Data Available!",
+      "category": "CWPP Dashboard",
+      "is_active": true,
       "type": "risk"
     },
     {
-      "name": "Workload Alert",
+      "name": "Workload Risk",
+      "text": "No Graph Data Available!",
+      "is_active": true,
       "id": 3
+    }
+  ],
+  "cwpp": [
+    {
+      "name": "CWPP Alert",
+      "text": "Testing",
+      "is_active": true,
+      "id": 1
     },
     {
-      "name": "Workload Alert",
-      "id": 4
+      "name": "CWPP height",
+      "text": "No Graph Data Available!",
+      "is_active": true,
+      "id": 2
+    }
+  ],
+  "registry": [
+    {
+      "name": "Registry Image Risk",
+      "text": "Testing",
+      "is_active": true,
+      "id": 1,
+      "issue_count": 1470,
+      "critical": 9,
+      "high": 150,
+      "warning": 300,
+      "normal": 400,
+      "save": 5
+    },
+    {
+      "name": "Image Security Issues",
+      "text": "No Graph Data Available!",
+      "is_active": true,
+      "id": 2,
+      "issue_count": 2,
+      "critical": 300,
+      "high": 300,
+      "warning": 300,
+      "normal": 400,
+      "save": 100
     }
   ],
   "profile": {

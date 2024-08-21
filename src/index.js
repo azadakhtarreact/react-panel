@@ -43,6 +43,7 @@ import "./@core/assets/fonts/feather/iconfont.css"
 import "./@core/scss/core.scss"
 import "./assets/scss/style.scss"
 import "../src/assets/css/flatpickr.min.css"
+import "./assets/css/style.css"
 
 // ** Service Worker
 import * as serviceWorker from "./serviceWorker"

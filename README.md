@@ -6,21 +6,18 @@
 Refer to https://nodejs.org/en/ to install nodejs
 ## https://nodejs.org/en/blog/release/v16.20.0
 
-### Install create-react-app
-Install create-react-app npm package globally. This will help to easily run the project and also build the source files easily. Use the following command to install create-react-app
 
-```bash
-yarn install
-```
-## Live Application URL
+### Live Application URL
 
 The Application is deployed in https://github.com/azadakhtarreact/react-panel.git
 
 Click on the link to see the application
 
-## Cloning and Running the Application in local
+### Cloning and Running the Application in local
 
 Clone the project into local system steps are below
+
+The Application is deployed in https://github.com/azadakhtarreact/react-panel.git
 
 # open extract the zip file 
 # open the project folder in terminal 
@@ -54,20 +51,11 @@ The project CNAPP dashboard can be used to build bigger projects
 ### https://vercel.com/azad-akhtars-projects/react-panel-demo
 This URL has the application deployed in
 # Run the JSON Server 
-# open project folder in terminal and run the given comane below
+# open project folder in terminal and run the given command below
 
 ```bash
 json-server --watch db.json --port 8080
 
 ```
 **axios** library is used to make HTTP Calls
-**redux** for state management 
-
-## Resources
-
-**create-react-app** : The following link has all the commands that can be used with create-react-app
-https://github.com/facebook/create-react-app
-
-**ReactJS** : Refer to https://reactjs.org/ to understand the concepts of ReactJS
-
-**React Bootstrap** : Refer to https://react-bootstrap.github.io/getting-started/introduction/ to understand how to use React Bootstrap
+**redux** for state management

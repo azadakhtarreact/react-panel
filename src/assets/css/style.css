@@ -1,16 +1,77 @@
-.onlyCapitalized{ text-transform: capitalize !important;}
+.onlyCapitalized {
+  text-transform: capitalize !important;
+}
 
-  /* dashboard  */
-  .addWidgetButton {
+/* dashboard  */
+/* .addWidgetButton {
     border: 1px;
     border-color: #b8b2b2 !important;
     background-color: #b8b2b2 !important;
     color: #8c8888 !important;
     width: 150px;
-  }
+  } */
+h5 {
+  color: #000;
+}
+.critical {
+  background-color: #7f1025;
+}
+.high {
+  background-color: #d6310d;
+}
+.warning {
+  background-color: #ee8009;
+}
+.normal {
+  background-color: #e7bd12;
+}
+.save {
+  background-color: #b2b1ac;
+}
+.area-block {
+  height: 160px;
+  width: 313px;
+  /* background: red; */
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
 
-  .addForm.offcanvas-header{
-    background: #150552 !important;
-    background-color: #150552 !important;
+.addWidgetHeader.offcanvas-header .offcanvas-title {
+  color: #fff !important;
+}
+/* .addWidgetHeader.offcanvas-header .btn-close{
     color: #fff !important;
+  } */
+
+.custom-checkbox {
+  padding: 3px;
+  margin: 5px;
+  border: 1px solid #acacb3;
+  border-radius: 4px;
+}
+.addWidgetHeader.offcanvas-header {
+  background: #150552 !important;
+  background-color: #150552 !important;
+}
+
+.custom-add-button {
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  padding: 9px 18px;
+  color: gray;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+@media only screen and (max-width: 1440px) {
+  .my-card-same-height {
+    height: 160px;
   }
+}
+
+@media only screen and (max-width: 1024px) {
+  .my-card-same-height {
+    height: auto;
+  }
+}
